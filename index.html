@@ -1,0 +1,56 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Criptografia com cifra de César e Base64</title>
+</head>
+
+<body>
+  <header>
+    <h1>Codificação e Decodificação</h1>
+  </header>
+
+  <form>
+    <label for='mensagem'>Digite aqui a mensagem: </label>
+    <br><br>
+
+    <textarea cols='30' rows='5' id='mensagem' class="input" required></textarea>
+
+    <fieldset>
+      <legend>Codificar com:</legend>
+
+      <select id='selecao'>
+        <option value='selecione'>Selecione</option>
+        <option value='cesar'>Cifra de César</option>
+        <option value='bs64'>Base64</option>
+      </select>
+
+      <div class="passo">
+        <label for="passo"> Escolha o incremento:</label>
+        <input type="number" name="passo" min="1" max="25" id="escolhaPasso" checked>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="radio-code">
+        <input type="radio" value="codificar" name="code" id="radioCode" checked>
+        Codificar </label>
+      <br>
+      <label for="radio-decode">
+        <input type="radio" value="decodificar" name="code" id="radioDecode">
+        Decodificar </label>
+    </fieldset>
+
+    <button class="botao"> Prosseguir </button>
+    <br>
+    <label for="Mensagem"> Resultado: </label>
+    <br>
+    <textarea cols="30" rows="5" id="mensagemFinal" class="input"></textarea>
+  </form>
+  <script src='script.js'></script>
+</body>
+
+</html>

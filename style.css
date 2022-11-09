@@ -1,0 +1,57 @@
+*{color:#FFFFF0;
+  text-align: center;
+}
+
+body {
+  font-family: Inconsolata,monospace, Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to top, rgb(138,43,226) 0%, rgb(75,0,130) 100%);
+}
+
+
+header h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+  font-size: 18px;
+
+}
+
+fieldset select {
+  width: 150px;
+  background: rgb(188, 132, 206);
+  color: white;
+  font-size: 20px;
+  border: 3px solid rgb(43, 2, 43);
+  border-radius: 10px;
+}
+
+.passo {
+  display: none;
+}
+
+.passo input {
+  width: 150px;
+  background: rgb(188, 132, 206);
+  color: white;
+  border: 1px solid rgb(43, 2, 43);
+  margin: 5px 0 20px;
+}
+
+.botao {
+  color: rgb(82, 4, 101);
+  background: rgb(188, 132, 206);
+  font-weight: 500;
+  font-size: 14px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.input {
+  margin-bottom: 14px;
+  font-size: 15px;
+resize: none;
+color: black;
+}
